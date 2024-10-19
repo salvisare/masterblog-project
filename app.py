@@ -59,10 +59,19 @@ def add():
     return render_template('add.html')
 
 
-@app.route('/contact')
-def contact():
-    return 'Contact Page'
+@app.route('/delete/<int:post_id>')
+def delete(post_id):
+    # Load existing posts
+    blog_posts = load_posts()
 
+    # Find the blog post with the given id and remove it from the list
+    updated_posts = [post for post in blog_posts if post['id'] != post_id]
+
+    # Save the updated posts
+    save_posts(updated_posts)
+
+    # Redirect back to the home page
+    return redirect(url_for('home'))
 
 
 if __name__ == '__main__':

@@ -20,6 +20,7 @@
                 </div>
                 <div class="card-body">
                     <p>{{ post.content }}</p>
+                    <p><i><a style="color: red;" href="{{ url_for('delete', post_id=post['id']) }}" class="add-post-button">Delete post</a></i></p>
                 </div>
             </div>
         {% endfor %}
