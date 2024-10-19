@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Post</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Post</h1>
+        <form action="/add" method="POST">
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" required></textarea>
+            </div>
+            <button type="submit">Add Post</button>
+            <a href="/" class="cancel-button" style="text-decoration: none; display: inline-block; margin-top: 10px; text-align: center; color: white; padding: 10px; background-color: #dc3545; border-radius: 4px;">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>
