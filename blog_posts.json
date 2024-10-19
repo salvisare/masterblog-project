@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "author": "John Doe",
+        "title": "First Post",
+        "content": "This is my first post."
+    },
+    {
+        "id": 2,
+        "author": "Jane Doe",
+        "title": "Second Post",
+        "content": "This is another post."
+    },
+    {
+        "id": 3,
+        "author": "John Jane",
+        "title": "Third Post",
+        "content": "This is my first post."
+    },
+    {
+        "id": 4,
+        "author": "Jane John",
+        "title": "Fourth Post",
+        "content": "This is another post."
+    },
+    {
+        "id": 5,
+        "author": "Doe Doe",
+        "title": "Fifth Post",
+        "content": "This is my first post."
+    },
+    {
+        "id": 6,
+        "author": "Doe Jane",
+        "title": "Sixth Post",
+        "content": "This is another post."
+    }
+]
